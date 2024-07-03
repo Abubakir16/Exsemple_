@@ -42,7 +42,6 @@ const RegisterForm = () => {
 
   return (
     <div className="fixed top-0 w-[100vw] h-[100vh] flex items-center justify-center flex-col">
-      {console.log(window.innerWidth)}
       <form
         onSubmit={handleSubmit}
         className={`flex flex-col items-center border-2 w-[500px] min-h-[200px] px-[10px] rounded-[20px] py-[20px] relative`}
@@ -124,9 +123,8 @@ const RegisterForm = () => {
       </form>
 
       <div
-        className={`fixed top-0 left-0 w-[100vw]  h-[100vh] bg-[#0000005e] z-10 items-center justify-center ${
-          a ? "flex" : "hidden"
-        }`}
+        className={`fixed top-0 left-0 w-[100vw]  h-[100vh] bg-[#0000005e] z-10 items-center justify-center ${a ? "flex" : "hidden"
+          }`}
       >
         <div className="w-[300px] h-[200px] bg-[#fff] rounded-[20px] flex items-center justify-center flex-col relative">
           <h1 className="text-[#000] text-[16px] w-[170px]">

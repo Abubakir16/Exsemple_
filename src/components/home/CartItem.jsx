@@ -21,7 +21,7 @@ export default function CartItem({ item, index, data, setQuantity }) {
       <Link to={`/${item.id}`}>
         <img
           className="h-[280px] object-cover w-[100%] hover:scale-1"
-          src={item?.image}
+          src={item?.image || 'https://www.shutterstock.com/image-vector/internet-network-warning-404-error-260nw-2009801198.jpg'}
           alt=""
         />
       </Link>
